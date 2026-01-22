@@ -16,7 +16,6 @@ def text_node_to_html_node(text_node):
         return LeafNode("img", None, {"src": text_node.url, "alt": text_node.text})
     raise ValueError(f"not a valid text type {text_node.text_type}")
 
-
 class TextType(Enum):
     TEXT = "text"
     BOLD = "bold"

@@ -58,7 +58,5 @@ class TestTextNodeToHtmlNode(unittest.TestCase):
         self.assertEqual(html_node.value, None)
         self.assertEqual(html_node.props_to_html(), ' src="https://image.com/image.png" alt="alt image text"')
 
-
-
 if __name__ == "__main__":
     unittest.main()
